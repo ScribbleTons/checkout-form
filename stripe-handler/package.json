@@ -1,0 +1,26 @@
+{
+    "name": "checkout-form",
+    "version": "1.0.0",
+    "description": "Checkout form for e-commerce",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ScribbleTons/checkout-form.git"
+    },
+    "keywords": [
+        "Azur",
+        "function",
+        "check-out",
+        "form",
+        "stripe"
+    ],
+    "author": "Ugwuoke Emmanuel",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ScribbleTons/checkout-form/issues"
+    },
+    "homepage": "https://github.com/ScribbleTons/checkout-form#readme"
+}
