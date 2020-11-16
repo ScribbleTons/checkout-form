@@ -19,30 +19,29 @@ module.exports = async function(context, req) {
                 context.log('starting the stripe charges');
                 stripe.charges.create({
                     amount: req.body.stripeAmt,
-                    description: 'sample charge',
+                    description: 'Sample Charge',
                     currency: 'usd',
                     customer: customer.id
                 });
-            }).then(
-                charge => {
-                    context.log('finish the stripe charges');
-                    context.res = {
-                        //status:200
-                        body: 'This has been completed'
-                    };
-                    context.done();
-                })
+            })
+            .then(charge => {
+                context.log('finished the stripe charges');
+                context.res = {
+                    // status: 200
+                    body: 'This has been completed'
+                };
+                context.done();
+            })
             .catch(err => {
                 context.log(err);
                 context.done();
             });
     } else {
         context.log(req.body);
-        contex.res = {
+        context.res = {
             status: 400,
-            body: 'We\'re missing something'
+            body: "We're missing something"
         };
         context.done();
     }
-
-}
+};

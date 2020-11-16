@@ -22,5 +22,8 @@
     "bugs": {
         "url": "https://github.com/ScribbleTons/checkout-form/issues"
     },
-    "homepage": "https://github.com/ScribbleTons/checkout-form#readme"
+    "homepage": "https://github.com/ScribbleTons/checkout-form#readme",
+    "dependencies": {
+        "stripe": "^8.121.0"
+    }
 }
