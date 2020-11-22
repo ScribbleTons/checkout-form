@@ -34,7 +34,7 @@ export default {
       setTimeout(() => {
         this.removed = false;
       }, 200);
-      this.removed = true;
+      // this.removed = true;
     },
   },
 };
